@@ -178,6 +178,28 @@ header {
     font-size: 1.1em;
 }
 
+
+.education-container {
+    padding: 50px 100px;
+}
+
+.education-item {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 1.2em;
+}
+
 .bar {
     margin: 20px 0;
 }
@@ -221,6 +243,71 @@ header {
     width: 70%;
 }
 
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    gap: 20px;
+}
+
+.contact-info {
+    max-width: 400px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+
 footer {
     text-align: center;
     padding: 20px;
@@ -234,13 +321,27 @@ footer {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     header {
-        padding: 20px 50px;
+        padding: 20px 20px;
     }
     .home {
         flex-direction: column;
         padding: 50px 20px;
     }
     .home-content {
-        text-align: center
+        text-align: center;
+    }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image img {
+        width: 100%;
+        height: auto;
+    }
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
     }
 }
+
+
