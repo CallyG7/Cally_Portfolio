@@ -331,13 +331,13 @@ footer {
 
 .projects-overlay {
     position: absolute;
-    top: -50px; /* Adjust to control overlap */
+    top: -50px; 
     left: 0;
     width: 100%;
-    height: 100px; /* Adjust to control the height of the cut-off effect */
-    background: rgba(0, 0, 0, 0.7); /* Same as the background color to blend */
-    border-top-left-radius: 100% 20px; /* Adjust to control the curve */
-    border-top-right-radius: 100% 20px; /* Adjust to control the curve */
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-top-left-radius: 100% 20px; 
+    border-top-right-radius: 100% 20px; 
     z-index: 1;
 }
 
